@@ -1,0 +1,54 @@
+Project details:
+Maven
+org.qucikstart
+add spring core dependency.
+
+create services package, create interface and inplement it.
+create config file and insert bean tag.
+
+create bean - payment and give classpath of impl
+use that bean in main class
+call makePayment();
+
+dependency - spring aop,aspectjrt,aspectjweaver - remove runtime from maven code
+New class - MyAspect
+Make before,after
+enable aspect in config.xml
+
+
+
+AOP:
+
+
+A Programming paradigm that aims to increase modularity by allowing the seperation of cross-cutting concerns.
+Procees of applying services or external services as transaction managment or logging to our application classess 
+without modifying the code. those services are only called as cross cutting concerns.
+
+eg:
+public paymentService
+{
+	-------------------------------(authenticate)
+	public void makepayment()
+	{
+	}
+}
+
+now suppose we have to authenticate for user.
+so before method - makepayment() we can do this using corss cuttong concerns.
+
+->Aspect: an aspect a modularization of a concern that cuts across 
+multiple classes.
+
+->Join Point: any point in prog such as method execution,exception handling.
+Spring supports only method execution join point.
+
+->Advice: an action taken by an aspect at particular join point.
+          Before, After, After returning, After Throwing.
+->Pointcut: an expression of AOP that marches join Point.
+
+
+
+
+
+
+

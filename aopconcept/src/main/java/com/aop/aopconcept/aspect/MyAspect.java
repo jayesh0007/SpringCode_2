@@ -1,0 +1,15 @@
+package com.aop.aopconcept.aspect;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+
+@Aspect
+public class MyAspect {
+
+	@Before("execution(* com.aop.aopconcept.services.PaymentServiceImpl.makePayment())")
+	public void printbefore() {
+		System.out.println("Payment Started..");
+	}
+	
+	
+}
