@@ -25,12 +25,15 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.aop.dlf.secondexample"/>
 			<item value="com.aop.aopconcept"/>
 		</list>
 		<list key="groupId">
+			<item value="com.aop.dlf"/>
 			<item value="com.aop"/>
 		</list>
 		<list key="artifactId">
+			<item value="secondexample"/>
 			<item value="aopconcept"/>
 		</list>
 		<list key="projectNameTemplate">

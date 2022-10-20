@@ -46,9 +46,17 @@ Spring supports only method execution join point.
           Before, After, After returning, After Throwing.
 ->Pointcut: an expression of AOP that marches join Point.
 
+advice bole toh jo apneko chahiye aage,piche
+aur apan abhi kidr advice use karenge usko bolty join points.
+eg - 
+water -- advice.
+kitchen,dining,washroom -- join points
 
 
-
-
+---------------------------------------------------------------
+@After("execution(public void study*())")
+-- it means any method that starts with study as prefix will have this logic after its execution.
+-------------------------------------------------------
+execution(public * study(..))  // A study method public and any type with any parameter
 
 
